@@ -1,1 +1,12 @@
-<p>home works!</p>
+<div>
+    <h1>Login</h1>
+    <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+      <input type="text" formControlName="username" placeholder="Username">
+      <br><br>
+  
+      <input type="password" formControlName="password" placeholder="Password">
+      <br><br>
+      <button type="submit">Save Data</button>
+    </form>
+  </div>
+  
