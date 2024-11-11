@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { FormGroup, FormControl, Validators } from '@angular/forms'; 
 import { ReactiveFormsModule } from '@angular/forms'; 
 import { Router } from '@angular/router'; 
 
@@ -11,5 +10,11 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
+
+  constructor(private router: Router) {}
+
+  navigateToItinerary() {
+    this.router.navigate(['/itinerary']);
+  }
   
 }

@@ -1,1 +1,16 @@
-<p>itinerary works!</p>
+<section class="itinerary-container">
+    <h2>Parisul pe zile</h2>
+    <ul *ngFor="let day of itineraryDays; let i = index">
+        <li>
+            <a href="#" (click)="toggleDay(i); $event.preventDefault()">{{ day }}</a>
+        </li>
+        <div *ngIf="expandedDayIndex === i" class="day-content">
+            <h3>{{ itineraryContent[i].title }}</h3>
+            <h5>{{ itineraryContent[i].description }}</h5>
+            <a *ngIf="itineraryContent[i].link" 
+            [href]="itineraryContent[i].link" 
+            target="_blank" class="google-maps">Traseul pe Google Maps</a>
+        </div>
+        
+    </ul>
+</section>
