@@ -132,6 +132,14 @@ export class ItineraryComponent {
       id: 4,
       title: 'Activitati',
       description: 'De la Montparnasse pana in bogatiile de la Versaille.',
+      objectives: [
+        {
+          id: 1,
+          name: 'Palace Versailles',
+          picture: '../../assets/day4/palais_versailles.jpg',
+          checked: false,
+        },
+      ],
       link: "https://www.google.ro/maps/dir/Montparnasse,+Paris,+Fran%C5%A3a/Versailles,+Fran%C5%A3a/@48.8048637,2.0787926,13z/data=!4m16!4m15!1m5!1m1!1s0x47e671c7ec66755b:0xc9c5e482069c4490!2m2!1d2.330491!2d48.8393304!1m5!1m1!1s0x47e67db475f420bd:0x869e00ad0d844aba!2m2!1d2.1297422!2d48.8022585!2m1!4e2!3e3?entry=ttu&g_ep=EgoyMDI0MTAwOS4wIKXMDSoASAFQAw%3D%3D"
     }
   ];
