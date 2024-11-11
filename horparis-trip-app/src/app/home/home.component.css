@@ -1,0 +1,48 @@
+main {
+	display: flex;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+}
+
+.home-container {
+	padding: 0 3em;
+	display: flex;
+	align-items: center;
+	gap: 2em;
+	text-align: center;
+}
+
+.home-container:hover {
+	background-color: rgb(82, 103, 170);
+	cursor: pointer;
+}
+
+h1:hover {
+	color: #ec1a23;
+	cursor: pointer;
+}
+
+.pin {
+	height: 150px; 
+	aspect-ratio: 2/3;
+	mask: 
+	  conic-gradient(from -30deg at bottom,#0000,#000 1deg 59deg,#0000 60deg) bottom/100% 50% no-repeat, 
+	  radial-gradient(circle at 50% calc(100% / 3),#0000 21.5%,#000 22% 44%,#0000 44.5%);
+	background: #ec1a23;
+}
+
+.curved-edge {
+	--c: 75px; 
+	height: 450px;
+	aspect-ratio: 1;
+	mask: radial-gradient(60% var(--c) at 50% var(--c),#0000 calc(100% - 2px),#000) 0 calc(-1*var(--c));
+  }
+
+@media only screen and (max-width: 500px) {
+	.home-container {
+		flex-direction: column;
+	}
+	
+}
+  
