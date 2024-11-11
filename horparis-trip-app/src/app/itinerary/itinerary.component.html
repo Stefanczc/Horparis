@@ -1,6 +1,6 @@
 <section class="itinerary-container">
     <h2>Parisul pe zile</h2>
-    <ul *ngFor="let day of itineraryDays; let i = index">
+    <ul *ngFor="let day of itineraryDays; let i = index;">
         <li>
             <a href="#" (click)="toggleDay(i); $event.preventDefault()">{{ day }}</a>
         </li>
@@ -10,6 +10,13 @@
             <a *ngIf="itineraryContent[i].link" 
             [href]="itineraryContent[i].link" 
             target="_blank" class="google-maps">Traseul pe Google Maps</a>
+            <button (click)="toggleObjectives(i)">Arata-mi obiectivele de astazi</button>
+            <section *ngIf="itineraryContent[i].showObjectives">
+                <div *ngFor="let objective of itineraryContent[i].objectives">
+                    <h4><span> {{ objective.id }}. </span> {{ objective.name }} </h4>
+                    <img [src]="objective.picture" alt="{{ objective.name }}" />
+                </div>
+            </section>
         </div>
         
     </ul>

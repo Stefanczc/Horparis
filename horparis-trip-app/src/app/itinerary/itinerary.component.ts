@@ -16,6 +16,29 @@ export class ItineraryComponent {
       id: 1,
       title: 'Activitati',
       description: "Din avion, spre gara si pana la muzeul Louvre!",
+      objectives: [
+      {
+        id: 1,
+        name: 'Gara de Nord',
+        picture: '../../assets/day1/gare_du_nord.jfif'
+      },
+      {
+        id: 2,
+        name: 'Bazilica Sacré-Cœur',
+        picture: '../../assets/day1/sacre_cour.jfif'
+      },
+      {
+        id: 3,
+        name: 'Opera Garnier',
+        picture: '../../assets/day1/palais_garnier.jpg'
+      },
+      {
+        id: 4,
+        name: 'Muzeul Louvre',
+        picture: '../../assets/day1/louvre_museum.jpg'
+      }
+    ],
+      showObjectives: false,
       link: "https://www.google.fr/maps/dir/Gare+du+Nord,+Rue+de+Dunkerque,+Paris,+France/Sacr%C3%A9-C%C5%93ur,+rue+du+Chevalier-de-La-Barre,+Paris,+France/Palais+Garnier,+Place+de+l'Op%C3%A9ra,+Paris,+France/Louvre+Museum,+Paris,+France/@48.8760849,2.3346128,14.75z/data=!3m1!5s0x47f112d46c2f6eef:0xfb8a933f53aec2c6!4m26!4m25!1m5!1m1!1s0x47e66e6bfc58a37f:0x4fb63768d2dd790c!2m2!1d2.35503!2d48.88051!1m5!1m1!1s0x47e66e4334868de3:0xcfc3870abe2b8519!2m2!1d2.3431043!2d48.8867046!1m5!1m1!1s0x47e66e30d4668339:0xa9abf21c286d0767!2m2!1d2.3316014!2d48.8719697!1m5!1m1!1s0x47e671d877937b0f:0xb975fcfa192f84d4!2m2!1d2.337644!2d48.8606111!3e2?entry=ttu&g_ep=EgoyMDI0MTEwNi4wIKXMDSoASAFQAw%3D%3D"
     },
     {
@@ -41,6 +64,10 @@ export class ItineraryComponent {
 
   toggleDay(index: number) {
     this.expandedDayIndex = this.expandedDayIndex === index ? null : index;
+  }
+
+  toggleObjectives(dayIndex: number) {
+    this.itineraryContent[dayIndex].showObjectives = !this.itineraryContent[dayIndex].showObjectives;
   }
 
 }
