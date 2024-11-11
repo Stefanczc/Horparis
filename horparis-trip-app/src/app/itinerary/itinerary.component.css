@@ -102,6 +102,15 @@
 .day-content h4, span {
     color: #0F2027;
 }
+
+.checked-text {
+    color: red;
+}
+
+.objective-checkbox {
+    cursor: pointer;
+}
+  
   
   
   

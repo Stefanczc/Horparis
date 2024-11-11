@@ -10,16 +10,21 @@
             <div class="buttons-container">
                 <a *ngIf="itineraryContent[i].link" 
                 [href]="itineraryContent[i].link" 
-                target="_blank" class="google-maps">Traseul pe MAPS</a>
+                target="_blank" 
+                class="google-maps">Traseul pe MAPS</a>
                 <button (click)="toggleObjectives(i)">Obiective</button>
             </div>
             <section *ngIf="itineraryContent[i].showObjectives">
                 <div *ngFor="let objective of itineraryContent[i].objectives">
-                    <h4><span> {{ objective.id }}. </span> {{ objective.name }} </h4>
+                    <h4>
+                        <input type="checkbox" [(ngModel)]="objective.checked" class="objective-checkbox">
+                        <span [ngClass]="{'checked-text': objective.checked}">
+                            {{ objective.id }}. {{ objective.name }}
+                        </span>
+                    </h4>
                     <img [src]="objective.picture" alt="{{ objective.name }}" />
                 </div>
             </section>
         </div>
-        
     </ul>
 </section>
