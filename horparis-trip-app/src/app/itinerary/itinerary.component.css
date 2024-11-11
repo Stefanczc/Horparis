@@ -49,7 +49,7 @@
     margin-bottom: 15px;
 }
   
-.day-content a {
+.day-content a, button {
     font-size: 1rem;
     color: #1e90ff;
     text-decoration: none;
@@ -61,10 +61,11 @@
     transition: background-color 0.3s ease, color 0.3s ease;
 }
   
-.day-content a:hover {
+.day-content a:hover, button:hover {
     background-color: #1e90ff;
     color: white;
     text-decoration: none;
+    cursor: pointer;
 }
   
 .day-content a::after {
@@ -78,9 +79,10 @@
     transform: translateY(-4px);
 }
   
-.day-content:hover a {
-    background-color: #1e90ff;
-    color: white;
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
 }
 
 .day-content img {
@@ -96,6 +98,9 @@
     font-size: 1.2em;
     margin-top: 10px;
     font-weight: bold;
+}
+.day-content h4, span {
+    color: #0F2027;
 }
   
   
