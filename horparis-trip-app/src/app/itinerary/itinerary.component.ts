@@ -54,31 +54,31 @@ export class ItineraryComponent {
       {
         id: 1,
         name: 'Hotelul des Invalides',
-        picture: '../../assets/day2/hotel_invalides.jpg',
+        picture: 'assets/day2/hotel_invalides.jpg',
         checked: false,
       },
       {
         id: 2,
         name: 'Place de la Concorde',
-        picture: '../../assets/day2/place_concorde.jpg',
+        picture: 'assets/day2/place_concorde.jpg',
         checked: false,
       },
       {
         id: 3,
         name: "Musee d'Art Moderne",
-        picture: '../../assets/day2/musee_art.jfif',
+        picture: 'assets/day2/musee_art.jfif',
         checked: false,
       },
       {
         id: 4,
         name: 'Trocadero',
-        picture: '../../assets/day2/trocadero.jfif',
+        picture: 'assets/day2/trocadero.jfif',
         checked: false,
       },
       {
         id: 5,
         name: 'Tour Eiffel',
-        picture: '../../assets/day2/tour-eiffel.jpg',
+        picture: 'assets/day2/tour-eiffel.jpg',
         checked: false,
       }
     ],
