@@ -21,25 +21,25 @@ export class ItineraryComponent {
       {
         id: 1,
         name: 'Gare du Nord',
-        picture: '../../assets/day1/gare_du_nord.jfif',
+        picture: '/assets/day1/gare_du_nord.jfif',
         checked: false,
       },
       {
         id: 2,
         name: 'Basilique du Sacré-Cœur',
-        picture: '../../assets/day1/sacre_cour.jfif',
+        picture: '/assets/day1/sacre_cour.jfif',
         checked: false,
       },
       {
         id: 3,
         name: 'Palais Garnier',
-        picture: '../../assets/day1/palais_garnier.jpg',
+        picture: '/assets/day1/palais_garnier.jpg',
         checked: false,
       },
       {
         id: 4,
         name: 'Musee du Louvre',
-        picture: '../../assets/day1/louvre_museum.jpg',
+        picture: '/assets/day1/louvre_museum.jpg',
         checked: false,
       }
     ],
