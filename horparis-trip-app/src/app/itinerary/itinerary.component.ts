@@ -21,7 +21,7 @@ export class ItineraryComponent {
       {
         id: 1,
         name: 'Gare du Nord',
-        picture: '/assets/day1/gare_du_nord.jfif',
+        picture: '../assets/day1/gare_du_nord.jfif',
         checked: false,
       },
       {
