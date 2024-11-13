@@ -1,6 +1,10 @@
 <section class="itinerary-container">
     <h2>Parisul pe zile</h2>
+    <aside>
+        <a [href]="airbnbRoute" target="_blank" class="google-maps">Du-ma la Airbnb!</a>
+    </aside>
     <ul *ngFor="let day of itineraryDays; let i = index;">
+        
         <li>
             <a href="#" (click)="toggleDay(i); $event.preventDefault()">{{ day }}</a>
         </li>
@@ -28,3 +32,4 @@
         </div>
     </ul>
 </section>
+

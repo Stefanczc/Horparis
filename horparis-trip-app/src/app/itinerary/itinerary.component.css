@@ -16,7 +16,13 @@
     margin-bottom: 2em;
 }
 
-.itinerary-container > ul > li > a {
+aside {
+    margin-bottom: 2em;
+    font-size: 1.25em;
+}
+
+.itinerary-container > ul > li > a,
+aside > a {
     background: #0F2027; 
 	background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  
 	background: linear-gradient(to right, #2C5364, #203A43, #0F2027); 
@@ -24,7 +30,8 @@
     padding: 1em;
 }
 
-.itinerary-container > ul > li > a:hover {
+.itinerary-container > ul > li > a:hover,
+aside > a:hover {
     color: #99c2ff;
 }
 
