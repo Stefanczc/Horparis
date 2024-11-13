@@ -142,8 +142,25 @@ export class ObjectivesService {
           }
     ]
 
-    getItinerary() {
-        return this.itineraryContent;
+    private storageKey = 'itineraryContent';
+
+    getItinerary(): Activity[] {
+      const savedItinerary = localStorage.getItem(this.storageKey);
+      if (savedItinerary) {
+        return JSON.parse(savedItinerary);
+      }  
+      return this.itineraryContent;
     }
 
+    updateCheckedState(activityId: number, objectiveId: number, checked: boolean) {
+      const itinerary = this.getItinerary();
+      const activity = itinerary.find(a => a.id === activityId);
+      if (activity) {
+        const objective = activity.objectives.find(o => o.id === objectiveId);
+        if (objective) {
+          objective.checked = checked;
+          localStorage.setItem(this.storageKey, JSON.stringify(itinerary));
+        }
+      }
+    }
 }

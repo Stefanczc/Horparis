@@ -21,7 +21,10 @@
             <section *ngIf="itineraryContent[i].showObjectives">
                 <div *ngFor="let objective of itineraryContent[i].objectives">
                     <h4>
-                        <input type="checkbox" [(ngModel)]="objective.checked" class="objective-checkbox">
+                        <input type="checkbox" 
+                        [(ngModel)]="objective.checked"
+                        (change)="onObjectiveChecked(itineraryContent[i].id, objective.id, objective.checked)" 
+                        class="objective-checkbox">
                         <span [ngClass]="{'checked-text': objective.checked}">
                             {{ objective.id }}. {{ objective.name }}
                         </span>
