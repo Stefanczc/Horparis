@@ -3,4 +3,5 @@ export interface Objective {
     name: string;
     picture: string;
     checked: boolean;
+    price: string;
 }

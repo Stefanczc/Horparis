@@ -13,7 +13,7 @@ import { ObjectivesService } from '../objectives/objectives.service';
 })
 export class ItineraryComponent implements OnInit {
 
-  itineraryDays = ['Ziua 1', 'Ziua 2', 'Ziua 3', 'Ziua 4'];
+  itineraryDays = ['Ziua 1 - Costuri Muzee: 22€', 'Ziua 2 - Costuri Muzee: 50€', 'Ziua 3 - Costuri Muzee: 76€', 'Ziua 4 - Costuri Muzee: 47€'];
   itineraryContent: Activity[] = [];
   expandedDayIndex: number | null = null;
   airbnbRoute = 'https://www.google.com/maps/dir/47.10017,27.543903/86+Rue+Raymond+Lefebvre,+94250+Gentilly,+Fran%C5%A3a/@48.2751946,4.8761471,5z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x47e6710b4ff665b1:0x1541088fec314107!2m2!1d2.3400906!2d48.8117068!3e3?entry=ttu&g_ep=EgoyMDI0MTExMS4wIKXMDSoASAFQAw%3D%3D';

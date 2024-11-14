@@ -117,6 +117,10 @@ aside > a:hover {
 .objective-checkbox {
     cursor: pointer;
 }
+
+.price-tag {
+    color: red;
+}
   
   
   

@@ -1,7 +1,7 @@
 <section class="itinerary-container">
     <h2>Parisul pe zile</h2>
     <aside>
-        <a [href]="airbnbRoute" target="_blank" class="google-maps">Du-ma la Airbnb!</a>
+        <a [href]="airbnbRoute" target="_blank" class="google-maps">Du-ma la Airbnb! Nu mai am bani!</a>
     </aside>
     <ul *ngFor="let day of itineraryDays; let i = index;">
         
@@ -28,6 +28,7 @@
                         <span [ngClass]="{'checked-text': objective.checked}">
                             {{ objective.id }}. {{ objective.name }}
                         </span>
+                        <span class="price-tag"> {{ objective.price }}</span>
                     </h4>
                     <img [src]="objective.picture" alt="{{ objective.name }}" />
                 </div>
