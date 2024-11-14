@@ -21,25 +21,37 @@ export class ObjectivesService {
             },
             {
               id: 2,
-              name: 'Basilique du Sacré-Cœur',
-              picture: '/assets/day1/sacre_cour.jfif',
+              name: 'Holybelly',
+              picture: '../assets/day1/holybelly.jpg',
               checked: false,
             },
             {
               id: 3,
-              name: 'Palais Garnier',
-              picture: '/assets/day1/palais_garnier.jpg',
+              name: 'Porte Saint-Denis',
+              picture: '../assets/day1/stdennis_porte.jpg',
               checked: false,
             },
             {
               id: 4,
+              name: 'Place des Victoires',
+              picture: '../assets/day1/victoires_paris.jpg',
+              checked: false,
+            },
+            {
+              id: 5,
+              name: 'Jardin du Palais Royal',
+              picture: '../assets/day1/palais_royal.jpeg',
+              checked: false,
+            },
+            {
+              id: 6,
               name: 'Musee du Louvre',
               picture: '/assets/day1/louvre_museum.jpg',
               checked: false,
             }
           ],
             showObjectives: false,
-            link: "https://www.google.fr/maps/dir/Gare+du+Nord,+Rue+de+Dunkerque,+Paris,+France/Sacr%C3%A9-C%C5%93ur,+rue+du+Chevalier-de-La-Barre,+Paris,+France/Palais+Garnier,+Place+de+l'Op%C3%A9ra,+Paris,+France/Louvre+Museum,+Paris,+France/@48.8760849,2.3346128,14.75z/data=!3m1!5s0x47f112d46c2f6eef:0xfb8a933f53aec2c6!4m26!4m25!1m5!1m1!1s0x47e66e6bfc58a37f:0x4fb63768d2dd790c!2m2!1d2.35503!2d48.88051!1m5!1m1!1s0x47e66e4334868de3:0xcfc3870abe2b8519!2m2!1d2.3431043!2d48.8867046!1m5!1m1!1s0x47e66e30d4668339:0xa9abf21c286d0767!2m2!1d2.3316014!2d48.8719697!1m5!1m1!1s0x47e671d877937b0f:0xb975fcfa192f84d4!2m2!1d2.337644!2d48.8606111!3e2?entry=ttu&g_ep=EgoyMDI0MTEwNi4wIKXMDSoASAFQAw%3D%3D"
+            link: "https://www.google.com/maps/dir/Gare+du+Nord,+Rue+de+Dunkerque,+Paris,+Fran%C5%A3a/''/Porte+Saint-Denis/Place+des+Victoires/Jardin+du+Palais+Royal/Louvre+Museum,+Paris,+Fran%C5%A3a/@48.8721972,2.3356629,14.75z/data=!3m1!5s0x47f112d46c2f6eef:0xfb8a933f53aec2c6!4m42!4m41!1m5!1m1!1s0x47e66e6bfc58a37f:0x4fb63768d2dd790c!2m2!1d2.35503!2d48.88051!1m5!1m1!1s0x47e66e0dd56340a1:0x8491e9bc1ef99ad8!2m2!1d2.3596596!2d48.8710383!1m5!1m1!1s0x47e66f013ce3ea95:0xc85b7b649a004c2d!2m2!1d2.352704!2d48.8698004!1m5!1m1!1s0x47e66fd34316cb7f:0x48678fac6e8e53a7!2m2!1d2.3411724!2d48.865652!1m5!1m1!1s0x47e66e25aa74bce5:0x26b66d8ea44cf7b3!2m2!1d2.3378061!2d48.8649723!1m5!1m1!1s0x47e671d877937b0f:0xb975fcfa192f84d4!2m2!1d2.337644!2d48.8606111!2m3!6e0!7e2!8j1731918600!3e2?entry=ttu&g_ep=EgoyMDI0MTExMS4wIKXMDSoASAFQAw%3D%3D"
           },
           {
             id: 2,
@@ -134,6 +146,18 @@ export class ObjectivesService {
                 id: 1,
                 name: 'Palace Versailles',
                 picture: '../../assets/day4/palais_versailles.jpg',
+                checked: false,
+              },
+              {
+                id: 2,
+                name: 'Basilique du Sacré-Cœur',
+                picture: '../../assets/day4/sacre_cour.jfif',
+                checked: false,
+              },
+              {
+                id: 3,
+                name: 'Palais Garnier',
+                picture: '../../assets/day4/palais_garnier.jpg',
                 checked: false,
               },
             ],
